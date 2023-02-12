@@ -3,9 +3,9 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {cors : {origin : '*'}})
 
-const port = 3001;
+//const port = 3001;
 
-server.listen(port, () => {
+server.listen(PORT, () => {
 	console.log('server is running...')
 })
 
