@@ -5,7 +5,7 @@ const io = require('socket.io')(server, {cors : {origin : '*'}})
 
 //const port = 3001;
 
-server.listen(PORT, () => {
+server.listen(process.env.PORT, () => {
 	console.log('server is running...')
 })
 
