@@ -3,9 +3,13 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {cors : {origin : '*'}})
 
-//const port = 3001;
+const port = 3001;
 
-server.listen(process.env.PORT, () => {
+// server.listen(process.env.PORT, () => {
+// 	console.log('server is running...')
+// })
+
+server.listen(port, () => {
 	console.log('server is running...')
 })
 
